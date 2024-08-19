@@ -1,4 +1,4 @@
-import { Box, Typography, Stack, Divider, Chip } from '@mui/material'
+import { Box, Typography, Stack } from '@mui/material'
 import { format, isEqual, startOfDay, add } from 'date-fns'
 import ChattingCard from '../ChatCard/ChatCard'
 
@@ -8,10 +8,10 @@ export default function ChatHistoryCard({ details }) {
         const today = startOfDay(new Date())
 
         if (isEqual(date, today)) {
-            return `Today's chats`
+            return `Today's chat`
         }
         else if (isEqual(today, add(date, { days: 1 }))) {
-            return `Yesterday's chats`
+            return `Yesterday's chat`
         }
         else {
             return format(date, 'do LLL yyyy')
