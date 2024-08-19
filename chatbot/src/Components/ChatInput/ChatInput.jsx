@@ -71,15 +71,15 @@ export default function ChatInput({ generateResponse, setScroll, chat, clearChat
                         Ask
                     </Button>
                     <Button
-                        variant='outlined'
+                        variant={!chat.length > 0?'outlined':'contained'}
                         onClick={handleSave}
                         disabled={!chat.length > 0}
                         sx={{
                             fontSize: { xs: 12, md: 16 },
                             '@media (max-width:767px)': {
                                 minWidth: 0,
-                                paddingLeft: 1.5,
-                                paddingRight: 1.5
+                                paddingLeft: 2,
+                                paddingRight: 2
                             }
                         }}
                     >
