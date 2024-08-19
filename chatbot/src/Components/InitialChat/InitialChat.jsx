@@ -31,22 +31,14 @@ export default function InitialChat({ generateResponse }) {
                 spacing={2}
                 my={5}
             >
-                <Typography variant='h2'>
+                <Typography variant='h4'>
                     How Can I Help You Today?
                 </Typography>
-                <Box
-                    component={'img'}
-                    src={icon}
-                    height={{ xs: 42, md: 70 }}
-                    width={{ xs: 42, md: 70 }}
-                    boxShadow={4}
-                    borderRadius={'50%'}
-                />
             </Stack>
             <Grid container spacing={{ xs: 1, md: 3 }}>
                 {initialData.map(item => (
                     <Grid item key={item.heading} xs={12} md={6}>
-                        <Card heading={item.heading} subtext={item.subtext} handleClick={generateResponse} />
+                        <Card heading={item.heading} text={item.subtext} handleClick={generateResponse} />
                     </Grid>
                 ))}
             </Grid>

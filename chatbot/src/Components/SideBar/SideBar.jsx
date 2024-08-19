@@ -2,6 +2,7 @@ import { useContext } from "react"
 // import { ThemeContext } from "../../theme/ThemeContext"
 import { Typography, Box, Stack, Button, useMediaQuery } from '@mui/material'
 import icon from '../../images/icon1.png'
+import pen from '../../images/pen.png'
 import { Link } from 'react-router-dom'
 import AddCommentIcon from '@mui/icons-material/AddComment';
 import CloseIcon from '@mui/icons-material/Close';
@@ -67,8 +68,14 @@ export default function Sidebar({ setChat, closeMenu }) {
                             New Chat
                         </Typography>
                     </Stack>
-
-                    <AddCommentIcon sx={{ color: 'text.primary' }} />
+                    <Box
+                            component={'img'}
+                            src={pen}
+                            height={42}
+                            width={42}
+                            
+                        />
+                    
 
                 </Stack>
             </Link>

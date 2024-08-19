@@ -1,6 +1,5 @@
-import { TextField, Box, Button, Stack, Snackbar, useMediaQuery } from '@mui/material'
+import { TextField, Box, Button, Stack} from '@mui/material'
 import { useEffect, useState, useRef } from 'react'
-import { Link } from 'react-router-dom'
 
 export default function ChatInput({ generateResponse, setScroll, chat, clearChat }) {
 
@@ -33,7 +32,7 @@ export default function ChatInput({ generateResponse, setScroll, chat, clearChat
     }, [])
 
     return (
-        <Box flexShrink={0} px={{ xs: .5, md: 3 }} pb={{ xs: 1, md: 3 }}>
+        <Box >
             <Box component={'form'} onSubmit={handleSubmit}>
                 <Stack
                     direction={'row'}
@@ -88,18 +87,6 @@ export default function ChatInput({ generateResponse, setScroll, chat, clearChat
                     </Button>
                 </Stack>
             </Box>
-
-            <Snackbar
-                open={showSnackbar}
-                message={'Chat saved.'}
-                onClose={() => setShowSnackbar(false)}
-                autoHideDuration={5000}
-                action={
-                    <Link to="/history">
-                        <Button size='small'>See past conversations</Button>
-                    </Link>
-                }
-            />
         </Box>
     )
 }

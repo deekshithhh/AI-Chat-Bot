@@ -2,7 +2,7 @@ import { Box, Typography, Stack, IconButton } from '@mui/material'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { styled } from '@mui/material/styles';
 
-export default function Card({ heading, subtext, handleClick }) {
+export default function Card({ heading, text, handleClick }) {
 
     return (
         <Stack
@@ -28,12 +28,10 @@ export default function Card({ heading, subtext, handleClick }) {
                     color={'text.secondary'}
                     fontSize={{xs:10, md:16}}
                 >
-                    {subtext}
+                    {text}
                 </Typography>
             </Box>
-            <IconButton size='small' sx={{  bgcolor: 'primary.light' }}>
-                <ArrowUpwardIcon fontSize='inherit' />
-            </IconButton>
+           
         </Stack>
     )
 }

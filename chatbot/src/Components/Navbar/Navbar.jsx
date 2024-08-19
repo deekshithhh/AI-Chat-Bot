@@ -19,11 +19,10 @@ export default function Navbar() {
           <MenuIcon onClick={() => handleMobileMenu((prev) => !prev)} />
         )}
 
-        <Link to={"/"} style={{ textDecoration: "none" }}>
-          <Typography variant="h1" component={"h1"}>
+       
+          <Typography variant="h3" component={"h3"}>
             Bot AI
           </Typography>
-        </Link>
       </Stack>
 
       
