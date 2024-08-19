@@ -1,5 +1,4 @@
 import { Box, Typography, Stack, Grid } from '@mui/material'
-import icon from '../../images/icon1.png'
 import Card from './Card'
 
 export default function InitialChat({ generateResponse }) {

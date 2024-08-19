@@ -48,7 +48,7 @@ export default function Sidebar({ setChat, closeMenu }) {
               src={icon}
               height={42}
               width={42}
-              borderRadius={2}
+              borderRadius={50}
               boxShadow={4}
               flexShrink={0}
             />
