@@ -1,8 +1,4 @@
 import { Box, Stack, Typography } from '@mui/material';
-// import InitialChat from '../../components/InitialChat/InitialChat';
-// import ChatInput from '../../components/ChatInput/ChatInput';
-// import ChattingCard from '../../components/ChattingCard/ChattingCard';
-// import FeedbackModal from '../../components/FeedbackModal/FeedbackModal';
 import InitialChat from '../Components/InitialChat/InitialChat';
 import ChatInput from '../Components/ChatInput/ChatInput';
 import ChattingCard from '../Components/ChatCard/ChatCard';
@@ -11,7 +7,6 @@ import { useEffect, useRef, useState } from 'react';
 import data from '../images/sampleData.json'
 import { useOutletContext } from "react-router-dom";
 import Navbar from '../Components/Navbar/Navbar';
-// import { ThemeContext } from '../../theme/ThemeContext';
 import { useContext } from 'react';
 
 export default function Home() {
@@ -22,7 +17,7 @@ export default function Home() {
     const [selectedChatId, setSelectedChatId] = useState(null)
     const [scrollToBottom, setScrollToBottom] = useState(false)
     const { chat, setChat } = useOutletContext();
-    // const { mode } = useContext(ThemeContext)
+
 
     // GENERATING AI RESPONSE
     const generateResponse = (input) => {
@@ -71,9 +66,9 @@ export default function Home() {
         >
 
             <Navbar />
-
+               {/* Display InitialChat component */}
             {chat.length == 0 && <InitialChat generateResponse={generateResponse} />}
-
+            {/* Display chat history and ChatInput component if there are conversations */}
             {chat.length > 0 && (
                 <Stack
                     height={1}
