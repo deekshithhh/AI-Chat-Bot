@@ -12,10 +12,10 @@ export default function FeedbackModal({ open, handleClose, chatId, updateChat })
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '95%',
+       
         bgcolor: 'primary.light',
         boxShadow: 24,
-        p: { xs: 2, md: 3 },
+        p: 3,
         maxWidth: 720,
         borderRadius: '10px'
     }
@@ -25,7 +25,7 @@ export default function FeedbackModal({ open, handleClose, chatId, updateChat })
 
         updateChat(prev => (
             prev.map(item => {
-                if (item.id == chatId) {
+                if (item.id === chatId) {
                     return { ...item, feedback: input }
                 }
                 else {
