@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AI-Chat-Bot/static/css/main.e6c13ad2.css",
+    "main.js": "/AI-Chat-Bot/static/js/main.6a5e6892.js",
+    "static/media/icon1.png": "/AI-Chat-Bot/static/media/icon1.699e854804aeca6cb165.png",
+    "static/media/icon2.png": "/AI-Chat-Bot/static/media/icon2.1ca3e17be4e19c4c96e1.png",
+    "static/media/pen.png": "/AI-Chat-Bot/static/media/pen.9066d5635ed38cb03ab6.png",
+    "index.html": "/AI-Chat-Bot/index.html",
+    "main.e6c13ad2.css.map": "/AI-Chat-Bot/static/css/main.e6c13ad2.css.map",
+    "main.6a5e6892.js.map": "/AI-Chat-Bot/static/js/main.6a5e6892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6a5e6892.js"
+  ]
+}
