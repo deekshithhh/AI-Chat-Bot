@@ -39,7 +39,7 @@ export default function ChatInput({ generateResponse, setScroll, chat, clearChat
                     spacing={{ xs: .5, md: 2 }}
                 >
                     <TextField
-                        placeholder='Message Bot AI...'
+                        placeholder='Enter your query here...'
                         sx={{
                             flex: 1,
                             bgcolor: 'primary.light',
